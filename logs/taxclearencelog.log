@@ -1,0 +1,564 @@
+2024-03-15 12:24:48.345  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Starting TaxclearancesystemApplication v0.0.1-SNAPSHOT using Java 17.0.10 on c5c49558bd8f with PID 1 (/app.jar started by root in /)
+2024-03-15 12:24:48.522  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : No active profile set, falling back to default profiles: default
+2024-03-15 12:25:23.211  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 12:25:23.290  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15 12:25:25.230  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1713 ms. Found 3 JPA repository interfaces.
+2024-03-15 12:25:25.556  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 12:25:25.581  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-15 12:25:25.723  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 12:25:25.734  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.PaiementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 12:25:25.741  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 12:25:25.747  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 51 ms. Found 0 Redis repository interfaces.
+2024-03-15 12:25:30.036  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4758820d' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 12:25:30.105  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 12:25:31.952  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2024-03-15 12:25:32.065  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 12:25:32.076  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-15 12:25:32.632  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15 12:25:32.633  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 42912 ms
+2024-03-15 12:25:33.125 DEBUG 1 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-03-15 12:25:35.469  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15 12:25:36.362  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-03-15 12:25:37.262  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-15 12:25:38.242  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15 12:25:39.251  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15 12:25:40.257  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-15 12:25:43.787  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-15 12:25:43.830  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 12:25:48.874  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15 12:25:49.336 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-03-15 12:25:50.991  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6cd15072, org.springframework.security.web.context.SecurityContextPersistenceFilter@4fa4f485, org.springframework.security.web.header.HeaderWriterFilter@6215366a, org.springframework.web.filter.CorsFilter@2ed3b1f5, org.springframework.security.web.authentication.logout.LogoutFilter@32eae6f2, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@3c0e00a8, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a44cfc0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@80b122b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@78cfa264, org.springframework.security.web.session.SessionManagementFilter@6af90849, org.springframework.security.web.access.ExceptionTranslationFilter@31b82e0f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@53ce2392]
+2024-03-15 12:25:51.727 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15 12:25:53.044 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-03-15 12:25:53.239 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2024-03-15 12:25:53.291 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15 12:25:54.343  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2024-03-15 12:25:56.062  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Started TaxclearancesystemApplication in 71.816 seconds (JVM running for 75.588)
+2024-03-15 12:26:27.861  INFO 1 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15 12:26:27.865  INFO 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15 12:26:27.868 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15 12:26:27.872 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15 12:26:27.883 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15 12:26:27.890 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1b90fee4
+2024-03-15 12:26:27.900 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@39de9bda
+2024-03-15 12:26:27.902 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15 12:26:27.903  INFO 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2024-03-15 12:26:28.670 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 12:26:28.676 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 12:26:28.799 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 12:26:28.814 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 12:26:29.025 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 12:26:29.047 DEBUG 1 --- [http-nio-8889-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 12:26:29.973 DEBUG 1 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 12:26:30.033 DEBUG 1 --- [http-nio-8889-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 12:26:30.211 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 12:42:53.865 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 12:42:54.156 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 12:42:54.425 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 12:42:54.448 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 12:42:54.771 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 12:42:54.854 DEBUG 1 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 12:42:55.921 DEBUG 1 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 12:42:56.003 DEBUG 1 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 12:42:56.105 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 13:59:09.133  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Starting TaxclearancesystemApplication v0.0.1-SNAPSHOT using Java 17.0.10 on c5c49558bd8f with PID 1 (/app.jar started by root in /)
+2024-03-15 13:59:09.141  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : No active profile set, falling back to default profiles: default
+2024-03-15 13:59:13.424  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 13:59:13.444  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15 13:59:14.083  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 600 ms. Found 3 JPA repository interfaces.
+2024-03-15 13:59:14.198  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 13:59:14.201  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-15 13:59:14.251  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 13:59:14.255  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.PaiementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 13:59:14.262  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 13:59:14.268  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-03-15 13:59:16.254  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@74eb909f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 13:59:16.301  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 13:59:17.775  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2024-03-15 13:59:17.843  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 13:59:17.859  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-15 13:59:18.023  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15 13:59:18.027  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8505 ms
+2024-03-15 13:59:18.357 DEBUG 1 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-03-15 13:59:19.963  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15 13:59:20.192  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-03-15 13:59:20.834  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-15 13:59:21.268  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15 13:59:22.078  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15 13:59:22.125  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-15 13:59:23.661  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-15 13:59:23.686  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 13:59:27.122  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15 13:59:27.378 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-03-15 13:59:28.538  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64e1377c, org.springframework.security.web.context.SecurityContextPersistenceFilter@39ee94de, org.springframework.security.web.header.HeaderWriterFilter@43c57161, org.springframework.web.filter.CorsFilter@5bf22f18, org.springframework.security.web.authentication.logout.LogoutFilter@2be21396, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@502a4156, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c6b4ed7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6ca30b8a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b0fd744, org.springframework.security.web.session.SessionManagementFilter@60990e5c, org.springframework.security.web.access.ExceptionTranslationFilter@2db1b657, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2f10f633]
+2024-03-15 13:59:28.992 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15 13:59:29.368 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-03-15 13:59:29.479 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2024-03-15 13:59:29.496 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15 13:59:30.355  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2024-03-15 13:59:31.454  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Started TaxclearancesystemApplication in 23.594 seconds (JVM running for 25.354)
+2024-03-15 14:05:03.477  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 14:05:03.486  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15 14:05:03.517  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15 14:09:50.628  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Starting TaxclearancesystemApplication v0.0.1-SNAPSHOT using Java 17.0.10 on a462dc6c207b with PID 1 (/app.jar started by root in /)
+2024-03-15 14:09:50.688  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : No active profile set, falling back to default profiles: default
+2024-03-15 14:09:56.492  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 14:09:56.533  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15 14:09:57.130  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 529 ms. Found 3 JPA repository interfaces.
+2024-03-15 14:09:57.179  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 14:09:57.183  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-15 14:09:57.241  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 14:09:57.258  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.PaiementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 14:09:57.263  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 14:09:57.265  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 0 Redis repository interfaces.
+2024-03-15 14:09:59.414  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@553f1d75' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 14:09:59.455  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 14:10:00.736  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2024-03-15 14:10:00.782  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 14:10:00.790  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-15 14:10:00.994  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15 14:10:00.996  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9861 ms
+2024-03-15 14:10:01.307 DEBUG 1 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-03-15 14:10:03.271  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15 14:10:03.366  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-03-15 14:10:03.763  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-15 14:10:03.988  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15 14:10:04.316  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15 14:10:04.345  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-15 14:10:05.959  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-15 14:10:05.988  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 14:10:08.009  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15 14:10:08.171 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-03-15 14:10:08.880  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72bd2871, org.springframework.security.web.context.SecurityContextPersistenceFilter@7ba93755, org.springframework.security.web.header.HeaderWriterFilter@ca8ef3a, org.springframework.web.filter.CorsFilter@7048f722, org.springframework.security.web.authentication.logout.LogoutFilter@7f287b98, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@6397248c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@33e434c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@664212ab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@77429040, org.springframework.security.web.session.SessionManagementFilter@67eec8e1, org.springframework.security.web.access.ExceptionTranslationFilter@5e230fc6, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@144ab983]
+2024-03-15 14:10:09.162 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15 14:10:09.394 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-03-15 14:10:09.449 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2024-03-15 14:10:09.475 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15 14:10:10.093  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2024-03-15 14:10:10.784  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Started TaxclearancesystemApplication in 31.183 seconds (JVM running for 37.796)
+2024-03-15 14:32:04.171  WARN 1 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m59s378ms146µs502ns).
+2024-03-15 14:34:14.436  WARN 1 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m11s50ms384µs827ns).
+2024-03-15 15:43:00.119  INFO 1 --- [http-nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15 15:43:00.126  INFO 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15 15:43:00.130 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15 15:43:00.132 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15 15:43:00.133 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15 15:43:00.177 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@6518fdfd
+2024-03-15 15:43:00.181 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7e87ef9e
+2024-03-15 15:43:00.185 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15 15:43:00.186  INFO 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 58 ms
+2024-03-15 15:43:00.577 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 15:43:00.598 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 15:43:00.755 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 15:43:00.770 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 15:43:00.913 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 15:43:00.926 DEBUG 1 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 15:43:01.823 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 15:43:01.852 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 15:43:01.978 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 15:46:29.053 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 15:46:29.061 DEBUG 1 --- [http-nio-8889-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 15:46:29.091 DEBUG 1 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 15:46:29.093 DEBUG 1 --- [http-nio-8889-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 15:46:29.104 DEBUG 1 --- [http-nio-8889-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 16:01:38.645 DEBUG 1 --- [http-nio-8889-exec-7] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 16:01:38.673 DEBUG 1 --- [http-nio-8889-exec-7] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 16:01:38.698 DEBUG 1 --- [http-nio-8889-exec-7] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 16:01:38.706 DEBUG 1 --- [http-nio-8889-exec-7] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 16:01:38.736 DEBUG 1 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 16:01:38.746 DEBUG 1 --- [http-nio-8889-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 16:01:38.874 DEBUG 1 --- [http-nio-8889-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 16:01:38.892 DEBUG 1 --- [http-nio-8889-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 16:01:38.899 DEBUG 1 --- [http-nio-8889-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 16:07:37.417  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 16:07:37.435  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15 16:07:37.462  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15 16:15:28.804  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Starting TaxclearancesystemApplication v0.0.1-SNAPSHOT using Java 17.0.10 on 9035c38e7206 with PID 1 (/app.jar started by root in /)
+2024-03-15 16:15:28.818  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : No active profile set, falling back to default profiles: default
+2024-03-15 16:15:34.378  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 16:15:34.395  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15 16:15:35.306  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 862 ms. Found 3 JPA repository interfaces.
+2024-03-15 16:15:35.433  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 16:15:35.447  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-15 16:15:35.516  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 16:15:35.523  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.PaiementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 16:15:35.525  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 16:15:35.527  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2024-03-15 16:15:37.123  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2da59753' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 16:15:37.143  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 16:15:38.266  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2024-03-15 16:15:38.312  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 16:15:38.335  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-15 16:15:38.704  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15 16:15:38.705  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 9653 ms
+2024-03-15 16:15:39.096 DEBUG 1 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-03-15 16:15:40.209  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15 16:15:40.468  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-03-15 16:15:40.931  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-15 16:15:41.392  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15 16:15:41.825  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15 16:15:41.870  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-15 16:15:43.888  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-15 16:15:43.912  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 16:15:45.542  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15 16:15:45.667 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-03-15 16:15:46.228  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1163a27, org.springframework.security.web.context.SecurityContextPersistenceFilter@58658f63, org.springframework.security.web.header.HeaderWriterFilter@70f68288, org.springframework.web.filter.CorsFilter@28276e50, org.springframework.security.web.authentication.logout.LogoutFilter@58253c57, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@28a9494b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60990e5c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@39ee94de, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@322ba549, org.springframework.security.web.session.SessionManagementFilter@2db33feb, org.springframework.security.web.access.ExceptionTranslationFilter@3aaa3c39, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@51b77cdf]
+2024-03-15 16:15:46.540 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15 16:15:46.681 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-03-15 16:15:46.717 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2024-03-15 16:15:46.736 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15 16:15:47.167  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2024-03-15 16:15:47.848  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Started TaxclearancesystemApplication in 21.23 seconds (JVM running for 23.409)
+2024-03-15 16:18:41.381  INFO 1 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15 16:18:41.389  INFO 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15 16:18:41.413 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15 16:18:41.415 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15 16:18:41.416 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15 16:18:41.450 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@314a31b0
+2024-03-15 16:18:41.452 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@629984eb
+2024-03-15 16:18:41.453 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15 16:18:41.454  INFO 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 42 ms
+2024-03-15 16:18:41.679 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 16:18:41.685 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 16:18:41.771 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 16:18:41.783 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 16:19:27.428 DEBUG 1 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 16:19:27.444 DEBUG 1 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 16:19:28.013 DEBUG 1 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 16:19:28.039 DEBUG 1 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 16:19:28.104 DEBUG 1 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 16:28:22.037 DEBUG 1 --- [http-nio-8889-exec-6] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 16:28:22.100 DEBUG 1 --- [http-nio-8889-exec-6] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 16:28:22.197 DEBUG 1 --- [http-nio-8889-exec-6] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 16:28:22.199 DEBUG 1 --- [http-nio-8889-exec-6] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 16:28:22.233 DEBUG 1 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 16:28:22.240 DEBUG 1 --- [http-nio-8889-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 16:28:22.277 DEBUG 1 --- [http-nio-8889-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 16:28:22.284 DEBUG 1 --- [http-nio-8889-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 16:28:22.302 DEBUG 1 --- [http-nio-8889-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 16:30:10.595 DEBUG 1 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 16:30:10.600 DEBUG 1 --- [http-nio-8889-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 16:30:10.612 DEBUG 1 --- [http-nio-8889-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 16:30:10.613 DEBUG 1 --- [http-nio-8889-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 16:30:10.617 DEBUG 1 --- [http-nio-8889-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 16:31:40.265 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 16:31:40.268 DEBUG 1 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 16:31:40.297 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 16:31:40.302 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 16:31:40.307 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 16:33:54.635  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 16:33:54.652  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15 16:33:54.692  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15 16:35:51.080  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Starting TaxclearancesystemApplication v0.0.1-SNAPSHOT using Java 17.0.10 on 9ceda83cd65d with PID 1 (/app.jar started by root in /)
+2024-03-15 16:35:51.103  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : No active profile set, falling back to default profiles: default
+2024-03-15 16:35:54.595  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 16:35:54.601  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15 16:35:54.988  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 369 ms. Found 3 JPA repository interfaces.
+2024-03-15 16:35:55.033  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 16:35:55.038  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-15 16:35:55.084  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 16:35:55.093  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.PaiementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 16:35:55.095  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 16:35:55.097  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 35 ms. Found 0 Redis repository interfaces.
+2024-03-15 16:35:56.477  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@62fe6067' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 16:35:56.514  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 16:35:57.267  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2024-03-15 16:35:57.286  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 16:35:57.288  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-15 16:35:57.446  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15 16:35:57.447  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 6138 ms
+2024-03-15 16:35:57.629 DEBUG 1 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-03-15 16:35:58.288  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15 16:35:58.358  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-03-15 16:35:58.612  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-15 16:35:58.892  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15 16:35:59.292  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15 16:35:59.321  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-15 16:36:00.916  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-15 16:36:00.933  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 16:36:02.165  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15 16:36:02.288 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-03-15 16:36:02.794  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b515eab, org.springframework.security.web.context.SecurityContextPersistenceFilter@4de79b7d, org.springframework.security.web.header.HeaderWriterFilter@180b3819, org.springframework.web.filter.CorsFilter@7048f722, org.springframework.security.web.authentication.logout.LogoutFilter@3becc950, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@4f379769, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4c51077d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2839e3c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@66c9b52f, org.springframework.security.web.session.SessionManagementFilter@5d512ddb, org.springframework.security.web.access.ExceptionTranslationFilter@2272cbb0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7af443a3]
+2024-03-15 16:36:03.038 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15 16:36:03.203 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-03-15 16:36:03.240 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2024-03-15 16:36:03.256 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15 16:36:03.670  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2024-03-15 16:36:04.185  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Started TaxclearancesystemApplication in 21.756 seconds (JVM running for 23.512)
+2024-03-15 16:41:24.716  INFO 1 --- [http-nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15 16:41:24.718  INFO 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15 16:41:24.720 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15 16:41:24.721 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15 16:41:24.722 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15 16:41:24.731 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@7c90b7b7
+2024-03-15 16:41:24.733 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@4293e066
+2024-03-15 16:41:24.734 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15 16:41:24.734  INFO 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 15 ms
+2024-03-15 16:41:24.923 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 16:41:24.926 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 16:41:24.983 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 16:41:24.986 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 16:41:25.057 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 16:41:25.063 DEBUG 1 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 16:41:25.507 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 16:41:25.533 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 16:41:25.588 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 16:46:52.081  WARN 1 --- [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m22s680ms885µs83ns).
+2024-03-15 17:04:34.407  INFO 1 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 17:04:34.453  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-03-15 17:04:34.503  INFO 1 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-03-15 17:07:39.628 ERROR 1 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:95 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at sn.yayaveli.taxclearancesystem.TaxclearancesystemApplication.main(TaxclearancesystemApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:95 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 26 common frames omitted
+
+2024-03-15 17:10:40.739 ERROR 1 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:95 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at sn.yayaveli.taxclearancesystem.TaxclearancesystemApplication.main(TaxclearancesystemApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:95 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 26 common frames omitted
+
+2024-03-15 17:12:39.611 ERROR 1 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:95 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:328)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:282)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:240)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:216)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:169)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:143)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:131)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:82)
+	at org.springframework.boot.SpringApplicationRunListeners.lambda$environmentPrepared$2(SpringApplicationRunListeners.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:117)
+	at org.springframework.boot.SpringApplicationRunListeners.doWithListeners(SpringApplicationRunListeners.java:111)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:62)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:374)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:332)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1343)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1332)
+	at sn.yayaveli.taxclearancesystem.TaxclearancesystemApplication.main(TaxclearancesystemApplication.java:12)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:108)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Logback configuration error detected: 
+ERROR in ch.qos.logback.core.joran.action.AppenderAction - Could not create an Appender of type [net.logstash.logback.appender.LogstashTcpSocketAppender]. ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.spi.Interpreter@4:95 - ActionException in Action for tag [appender] ch.qos.logback.core.joran.spi.ActionException: ch.qos.logback.core.util.DynamicClassLoadingException: Failed to instantiate type net.logstash.logback.appender.LogstashTcpSocketAppender
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - Could not find an appender named [logstash]. Did you define it below instead of above in the configuration file?
+ERROR in ch.qos.logback.core.joran.action.AppenderRefAction - See http://logback.qos.ch/codes.html#appender_order for more details.
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.loadConfiguration(LogbackLoggingSystem.java:179)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initializeWithConventions(AbstractLoggingSystem.java:80)
+	at org.springframework.boot.logging.AbstractLoggingSystem.initialize(AbstractLoggingSystem.java:60)
+	at org.springframework.boot.logging.logback.LogbackLoggingSystem.initialize(LogbackLoggingSystem.java:132)
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeSystem(LoggingApplicationListener.java:313)
+	... 26 common frames omitted
+
+2024-03-15 17:16:34.903  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Starting TaxclearancesystemApplication v0.0.1-SNAPSHOT using Java 17.0.10 on 6114380583a5 with PID 1 (/app.jar started by root in /)
+2024-03-15 17:16:34.928  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : No active profile set, falling back to default profiles: default
+2024-03-15 17:16:39.467  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 17:16:39.473  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15 17:16:40.021  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 502 ms. Found 3 JPA repository interfaces.
+2024-03-15 17:16:40.093  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 17:16:40.097  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-15 17:16:40.146  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 17:16:40.149  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.PaiementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 17:16:40.151  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 17:16:40.153  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 23 ms. Found 0 Redis repository interfaces.
+2024-03-15 17:16:41.904  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5629510' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 17:16:41.959  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 17:16:42.985  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2024-03-15 17:16:43.085  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 17:16:43.096  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-15 17:16:43.415  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15 17:16:43.416  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8197 ms
+2024-03-15 17:16:43.667 DEBUG 1 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-03-15 17:16:44.854  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15 17:16:44.979  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-03-15 17:16:45.373  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-15 17:16:45.706  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15 17:16:46.165  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15 17:16:46.205  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-15 17:16:47.467  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-15 17:16:47.503  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 17:16:48.891  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15 17:16:49.056 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-03-15 17:16:49.614  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3069a360, org.springframework.security.web.context.SecurityContextPersistenceFilter@70025b99, org.springframework.security.web.header.HeaderWriterFilter@250a9031, org.springframework.web.filter.CorsFilter@267f474e, org.springframework.security.web.authentication.logout.LogoutFilter@28a9494b, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@50eb4a2c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7134b8a7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@40de8f93, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7235f92b, org.springframework.security.web.session.SessionManagementFilter@558b4942, org.springframework.security.web.access.ExceptionTranslationFilter@111d5c97, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@78422efb]
+2024-03-15 17:16:49.857 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15 17:16:50.041 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-03-15 17:16:50.083 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2024-03-15 17:16:50.101 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15 17:16:50.534  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2024-03-15 17:16:51.071  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Started TaxclearancesystemApplication in 18.321 seconds (JVM running for 20.632)
+2024-03-15 17:17:24.111  INFO 1 --- [http-nio-8889-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15 17:17:24.113  INFO 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15 17:17:24.114 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15 17:17:24.115 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15 17:17:24.116 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15 17:17:24.120 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@16132f21
+2024-03-15 17:17:24.122 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@65e22def
+2024-03-15 17:17:24.123 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15 17:17:24.124  INFO 1 --- [http-nio-8889-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2024-03-15 17:17:24.305 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 17:17:24.309 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 17:17:24.454 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 17:17:24.456 DEBUG 1 --- [http-nio-8889-exec-1] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 17:18:03.302 DEBUG 1 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 17:18:03.309 DEBUG 1 --- [http-nio-8889-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 17:18:03.632 DEBUG 1 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 17:18:03.646 DEBUG 1 --- [http-nio-8889-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 17:18:03.687 DEBUG 1 --- [http-nio-8889-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 17:27:10.378  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Starting TaxclearancesystemApplication v0.0.1-SNAPSHOT using Java 17.0.10 on 6114380583a5 with PID 1 (/app.jar started by root in /)
+2024-03-15 17:27:10.387  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : No active profile set, falling back to default profiles: default
+2024-03-15 17:27:12.689  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 17:27:12.695  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-15 17:27:12.946  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 236 ms. Found 3 JPA repository interfaces.
+2024-03-15 17:27:12.978  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2024-03-15 17:27:12.980  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2024-03-15 17:27:13.010  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarantRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 17:27:13.012  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.PaiementRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 17:27:13.015  INFO 1 --- [main] .RepositoryConfigurationExtensionSupport : Spring Data Redis - Could not safely identify store assignment for repository candidate interface sn.yayaveli.taxclearancesystem.repositories.DeclarationRepository. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2024-03-15 17:27:13.016  INFO 1 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2024-03-15 17:27:14.128  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2da59753' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 17:27:14.158  INFO 1 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2024-03-15 17:27:14.738  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8889 (http)
+2024-03-15 17:27:14.761  INFO 1 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-15 17:27:14.769  INFO 1 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.54]
+2024-03-15 17:27:14.869  INFO 1 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-15 17:27:14.870  INFO 1 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4326 ms
+2024-03-15 17:27:15.016 DEBUG 1 --- [main] o.springframework.web.filter.CorsFilter  : Filter 'corsFilter' configured for use
+2024-03-15 17:27:15.760  INFO 1 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-15 17:27:15.889  INFO 1 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2024-03-15 17:27:16.197  INFO 1 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-03-15 17:27:16.394  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-15 17:27:16.772  INFO 1 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-15 17:27:16.799  INFO 1 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-03-15 17:27:17.831  INFO 1 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-03-15 17:27:17.842  INFO 1 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-15 17:27:18.948  WARN 1 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-15 17:27:19.067 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2024-03-15 17:27:19.609  INFO 1 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@726934e2, org.springframework.security.web.context.SecurityContextPersistenceFilter@4a92c6a9, org.springframework.security.web.header.HeaderWriterFilter@54e12f4c, org.springframework.web.filter.CorsFilter@28276e50, org.springframework.security.web.authentication.logout.LogoutFilter@3ff54f3d, org.springframework.security.oauth2.server.resource.web.BearerTokenAuthenticationFilter@6a1ef65c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4cb702ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@64c781a9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1319bc2a, org.springframework.security.web.session.SessionManagementFilter@21263314, org.springframework.security.web.access.ExceptionTranslationFilter@30c3ae63, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1163a27]
+2024-03-15 17:27:19.857 DEBUG 1 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-03-15 17:27:20.005 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/swagger-ui/] in 'viewControllerHandlerMapping'
+2024-03-15 17:27:20.040 DEBUG 1 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**] in 'resourceHandlerMapping'
+2024-03-15 17:27:20.056 DEBUG 1 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-03-15 17:27:20.482  INFO 1 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8889 (http) with context path ''
+2024-03-15 17:27:21.011  INFO 1 --- [main] s.y.t.TaxclearancesystemApplication      : Started TaxclearancesystemApplication in 11.569 seconds (JVM running for 12.871)
+2024-03-15 17:28:55.591  INFO 1 --- [http-nio-8889-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-15 17:28:55.594  INFO 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-15 17:28:55.595 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-03-15 17:28:55.596 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-03-15 17:28:55.597 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-03-15 17:28:55.599 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@70d77826
+2024-03-15 17:28:55.600 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@63f9b562
+2024-03-15 17:28:55.601 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-03-15 17:28:55.602  INFO 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2024-03-15 17:28:55.743 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 17:28:55.745 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 17:28:55.836 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 17:28:55.840 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 17:28:55.905 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 17:28:55.910 DEBUG 1 --- [http-nio-8889-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 17:28:56.228 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 17:28:56.248 DEBUG 1 --- [http-nio-8889-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 17:28:56.321 DEBUG 1 --- [http-nio-8889-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-03-15 17:46:08.675 DEBUG 1 --- [http-nio-8889-exec-4] o.s.web.client.RestTemplate              : HTTP GET http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+2024-03-15 17:46:08.681 DEBUG 1 --- [http-nio-8889-exec-4] o.s.web.client.RestTemplate              : Accept=[text/plain, application/json, application/*+json, */*]
+2024-03-15 17:46:08.716 DEBUG 1 --- [http-nio-8889-exec-4] o.s.web.client.RestTemplate              : Response 200 OK
+2024-03-15 17:46:08.717 DEBUG 1 --- [http-nio-8889-exec-4] o.s.web.client.RestTemplate              : Reading to [java.lang.String] as "application/json"
+2024-03-15 17:46:08.736 DEBUG 1 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/declarants", parameters={}
+2024-03-15 17:46:08.739 DEBUG 1 --- [http-nio-8889-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to sn.yayaveli.taxclearancesystem.controllers.DeclarantController#findAll()
+2024-03-15 17:46:08.779 DEBUG 1 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json]
+2024-03-15 17:46:08.782 DEBUG 1 --- [http-nio-8889-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[DeclarantDto(id=1, raisonSociale=raison OP, adresse=Cite gendarmerie, email=malick@mo.com, telephon (truncated)...]
+2024-03-15 17:46:08.790 DEBUG 1 --- [http-nio-8889-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK

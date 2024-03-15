@@ -1,0 +1,76 @@
+server:
+    port: 8889
+
+spring:
+    datasource:
+        password:
+        url: jdbc:mysql://mysql:3306/taxclearence?createDatabaseIfNotExist=true&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+        username: root
+    jpa:
+        database: mysql
+        show-sql: false
+        ## Hibernate DDL Auto (create, create-drop, update)
+        hibernate:
+            ddl-auto: update
+        properties:
+            hibernate:
+                dialect: org.hibernate.dialect.MySQL8Dialect
+    application:
+        name: spring-taxclearence
+#    liquibase:
+#        change-log: classpath:/db/changelog/changelog-master.xml
+    security:
+        oauth2:
+            resourceserver:
+                jwt:
+                    jwk-set-uri: http://taxclearence-keycloak:8080/realms/taxclearence-system/protocol/openid-connect/certs
+
+    #modification pour le caching
+    redis:
+        host: taxclearence-redis
+        port: 6379
+        cache:
+            redis:
+                cache-null-values: false
+                time-to-live: 40000
+            type: redis
+springdoc:
+    api-docs:
+        path: /api-docs
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: health,info,metrics,wavefront
+    info:
+        env:
+            enabled: true
+
+    endpoint:
+      health:
+        show-details: ALWAYS
+
+    health:
+        redis:
+          enabled: true #modification pour redis == false a true
+        probes:
+            enabled: true
+
+info:
+    application:
+        name: spring-taxclearence
+        version: '@project.version@'
+
+wavefront:
+    application:
+        name: spring-taxclearence
+
+logging:
+    level:
+        org:
+            springframework:
+                web: DEBUG
+    file:
+        name: ./logs/taxclearencelog.log
+#        name: /Users/cana/Documents/Development Projects/ELK/tax-clearance-system/logs/taxclearencelog.log
